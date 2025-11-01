@@ -3,6 +3,6 @@ const router = express.Router();
 const { getDummyData } = require('../controllers/dummyController');
 
 // GET /api/dummy
-router.get('/', getDummyData);
+router.get('/getUser', getDummyData);
 
 module.exports = router;

@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 const dummyRoutes = require('./src/routes/dummyRoutes');
-app.use('/', dummyRoutes);
+app.use('/api', dummyRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
